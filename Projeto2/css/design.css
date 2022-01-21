@@ -11,9 +11,9 @@ body {
 
 }
 
-.menu ul {
+.menuNav ul {
     text-align: right;
-    margin: -31px 40px 0 0;
+    margin: -31px 40px 0 50%;
     line-height: 10px;
 
 }
@@ -24,7 +24,7 @@ body {
 
 }
 
-.menu li {
+.menuNav li {
     display: inline-block;
     list-style: none;
 }
@@ -102,7 +102,7 @@ main {
 .sec3 {
     background-image: url(../imagens/bg_detalhe.png);
     height: 600px;
-    background-position: left center;
+    background-position: right center;
     background-size: cover;
     color: white;
 }
@@ -113,6 +113,7 @@ main {
     padding: 100px 0 0 100px;
     text-align: left;
     margin: 0;
+    font-weight: normal;
 }
 
 .sec3 p {
