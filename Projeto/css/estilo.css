@@ -73,7 +73,6 @@ main {
 .card {
     width: 32.65%;
     float: left;
-    box-sizing: border-box;
     border-bottom:4px solid rgb(26, 26, 26);
 }
 
