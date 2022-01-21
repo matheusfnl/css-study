@@ -6,21 +6,56 @@ body {
 
 .cabecalho {
     background-image: url(../../imagensProjeto/bg-3.jpg);
-    height: 500px;
+    height: 400px;
     background-position: left center;
     background-size: cover;
+    border-top: 1px solid transparent;
 }
 
 .cabecalho-content {
     text-align: center;
     color: white;
-    margin: 150px;
+    margin: 100px;
+}
+
+.cabecalho nav ul {
+    text-align: right;
+    margin: 5px 20px 0 0;
+}
+
+.cabecalho nav li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 20px;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.cabecalho nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.cabecalho nav a:hover {
+    background: rgba(0,0,0,0.25);
 }
 
 .cabecalho-content h1 {
     text-transform: uppercase;
     font-size: 56px;
     text-shadow: 2px 2px 2px rgb(31, 31, 31);
+}
+
+.cabecalho-content p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-bottom:1px solid white;
 }
 
 main {
@@ -32,12 +67,42 @@ main {
     background-color: white;
     padding: 10px;
     margin-top: 15px;
+    overflow: auto;
+}
+
+.card {
+    width: 32.65%;
+    float: left;
+    box-sizing: border-box;
+    border-bottom:4px solid rgb(26, 26, 26);
+}
+
+.card1, .card2 {
+    margin-right: 1%;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.cardSection div p {
+    margin: 0;
+    height: 45px;
+    box-sizing: border-box;
+    padding: 12px;
+    background: rgb(99, 99, 99);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .cardHeader {
-    border-bottom: solid 2px rgb(170, 170, 170);
-	padding: 10px;
+    border-bottom: solid 2px rgb(170, 170, 170);    
 	background: #eee;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .cardHeader h2 {
@@ -45,6 +110,7 @@ main {
 }
 
 footer {
+    width: 100%;
     height: 60px;
     color:rgb(228, 228, 228);
     font-size: 14px;
