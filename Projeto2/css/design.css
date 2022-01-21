@@ -1,6 +1,7 @@
 body {
-    font-family:sans-serif;
+    font-family:'Segoe UI';
     margin: 0 250px;
+    margin-top: 50px;
 }
 
 .menu {
@@ -28,16 +29,16 @@ body {
     list-style: none;
 }
 
-.menu li a {
+.menuNav li a {
     margin-right: 25px;
     color: rgba(89, 124, 153, 0.8);
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 13px;
 }
 
-.menu li a:hover {
+.menuNav li a:hover {
     color: rgb(164, 182, 196);
     
 }
@@ -117,7 +118,8 @@ main {
 .sec3 p {
     text-align: left;
     padding: 20px 40% 0 100px;
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 3px;
 }
 
 .sec4 h3 {
@@ -133,6 +135,7 @@ main {
     background-size: cover;
     border-top: 1px solid transparent;
     margin-bottom: 100px;
+    box-shadow: 0px 0px 10px black;
 }
 
 .bottom {
@@ -143,7 +146,7 @@ main {
     color: rgba(89, 124, 153, 0.8);
     letter-spacing: 2px;
     font-size: 14px;
-    padding: 5px;
+    padding: 2px;
     box-sizing: border-box;
 }
 
