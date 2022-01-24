@@ -2,25 +2,129 @@
 <!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
 <html lang="pt-br">
     <head>
-        <title>Aprendendo CSS: Form Login</title>
+        <title>Aprendendo CSS: Inputs</title>
 
         <meta charset="UTF-8">
         <meta name="author" content="Matheus">
         <meta name="description" content="Aprendendo CSS na Prática">
         <meta name="keywords" content="css, html">
 
+
+        <style>
+
+            form {
+                font-family: 'Segoe UI';
+            }
+
+            fieldset {
+                width: 300px;
+                margin: auto;
+                padding: 10px 10px;
+            }
+
+            #email, #number, #data, #estado {
+                box-sizing: border-box;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            #estado {
+                margin-top: 15px;
+            }
+
+            .sexoPessoa {
+                display: block;
+            }
+
+            #estado {
+                width: 45%;
+            }
+
+            #btn {
+                display: block;
+                margin-top: 10px;
+                clear:left;
+            }
+            
+            .textarea {
+                width: 100%;
+                box-sizing: border-box;
+                resize: none;
+                height: 80px;
+            }
+
+        </style>
+
     </head>
     <body>
         
         <h1>Exemplo de Formulário</h1>
         
-        <form action="#" method="get" class="formLogin">
+        <form action="#" method="post" class="formLogin">
             
             <fieldset>
 
-                <legend>Login</legend>
+                <legend>Formulário</legend>
 
+                <label>Email</label>
+                <input type="text" id="email" required>
+
+                <label>Numero</label>
+                <input type="number" min="0" id="number">
+
+                <label>Data</label>
+                <input type="date" min="1922-01-24" max="2022-01-24" id="data">
+
+                <label>Sexo:</label>
+                <label class="sexoPessoa">
+                    <input type="radio" name="sexo" value="M">
+                    Masculino
+                </label>
+                <label class="sexoPessoa">
+                    <input type="radio" name="sexo" value="F">
+                    Feminimo
+                </label>
+
+                <label>Estado</label>
+                <select name="estado" id="estado">
+                    <option value="0">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
                 
+            </fieldset>
+
+            <fieldset>
+                <legend>Área de Interesse</legend>
+
+                <label>
+                    <input type="checkbox" name="html" value="html">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="javascript" value="javascript">
+                    Javascript
+                </label>
+
+                <label>
+                    <input type="checkbox" name="css" value="css">
+                    CSS
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Contrato</legend>
+                <textarea name="contrato" class="textarea" readonly>Texto do contrato - Texto do contrato - Texto do contrato</textarea>
+                <label>
+                    <input type="checkbox" required>Li e Aceito
+                </label>    
+
+                <input type="submit" value="enviar" id="btn">
+
             </fieldset>
 
         </form>
