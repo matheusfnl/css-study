@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Aprendendo CSS: Form Login</title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Matheus">
+        <meta name="description" content="Aprendendo CSS na Prática">
+        <meta name="keywords" content="css, html">
+
+        <style>
+
+            body {
+                font-family: 'Segoe UI';
+            }
+
+            .formLogin {
+                width: 250px;
+                margin: 50px auto;
+            }
+
+            #user, #pass, .btn {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 5px;
+                font-size: 14px;
+            }
+
+            .formLogin label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            #user, #pass {
+                margin-bottom: 10px;
+            }
+
+            #user:focus, #pass:focus {
+                background: rgb(228, 228, 228);
+            }
+
+            .btn {
+                margin-top: 10px
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <h1>Exemplo de Formulário</h1>
+        
+        <form action="#" method="post" class="formLogin">
+            
+            <fieldset>
+
+                <legend>Login</legend>
+
+                <label for="user">Digite o seu usuário</label>
+                <input type="text" name="user" id="user" autofocus>
+
+                <label for="pass">Digite a senha</label>
+                <input type="password" name="pass" id="pass">
+
+                <input type="submit" value="Login" class="btn">
+
+            </fieldset>
+
+        </form>
+
+    </body>
+</html>
