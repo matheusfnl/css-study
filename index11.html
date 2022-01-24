@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Aprendendo CSS: Efeitos</title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Matheus">
+        <meta name="description" content="Aprendendo CSS na Prática">
+        <meta name="keywords" content="css, html">
+
+
+        <style>
+
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                background-image: linear-gradient(rgb(141, 215, 245), rgb(255, 160, 242));
+                height: 0;
+                
+            }
+
+            #radius {
+                background: yellow;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+
+                box-shadow:5px 5px 5px rgb(176, 223, 5), -5px 10px 5px rgb(255, 153, 0), -5px -5px 5px rgb(255, 60, 0);
+
+                border-radius: 60px 120px 60px 120px / 60px 120px 60px 120px;
+
+                transition-property: width, height, background-color;
+                transition-duration: 1s;
+                transition-timing-function:cubic-bezier(.67, -0.38, .5, 1.5);
+                transition-delay: 0.1s, .25s;
+            }
+
+            #radius:hover{
+                width: 400px;
+                height: 400px;
+
+                background-color: white;
+            }
+
+            @font-face {
+                font-family: 'nadia';
+                src: url(fonts/nadia/nadia-serif.eot);
+                src: url(fonts/nadia/nadia-serif.woff) format("woff"), url(fonts/nadia/nadia-serif.ttf) format("truetype"), url(fonts/nadia/nadia-serif.svg) format("svg");
+            }
+
+            .titulo {
+                font-size: 50px;
+                font-family: nadia;
+                text-align: center;
+
+                text-shadow: 2px 2px 0px rgb(248, 195, 255), -2px 4px 0px rgb(255, 171, 171), -2px -2px 0px rgb(176, 175, 255);
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="titulo">Efeitos</div>
+
+        <div id="radius"></div>
+
+    </body>
+</html>
