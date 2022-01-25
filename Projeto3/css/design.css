@@ -8,7 +8,6 @@ body {
 a {
     transition: color .1s ease-in, border .2s ease-out;
     text-decoration: none;
-    border-bottom: 2px dotted;
     line-height: 0.65;
     display: inline-block;
     color: rgb(73, 191, 157);
@@ -16,6 +15,10 @@ a {
 
 a:hover {
     border-bottom: transparent;
+}
+
+img {
+    max-width: 100%;
 }
 
 p {
@@ -85,10 +88,15 @@ label {
     font-size: 24px;
 }
 
-input, label, textarea {
+input, label, textarea, select{
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
+    color: inherit
+}
+
+select option {
+    font-size: 14px;
 }
 
 input {
@@ -101,7 +109,7 @@ textarea {
     resize: none;
 }
 
-input, textarea {
+input, textarea, select {
     background-color: #dadada;
     padding: 3px 10px 1px;
     border-radius: 8px;
@@ -111,6 +119,10 @@ input, textarea {
     margin-left: 2px;
 }
 
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+    margin-right: 8px;
+}
 input:focus, textarea:focus {
     border: 2px solid rgb(73, 191, 157);
     outline: none;
@@ -159,7 +171,8 @@ h6 {
 }
 
 .mainHeader img {
-    border-radius: 100%;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .mainHeaderTitle {
@@ -176,6 +189,7 @@ h6 {
 .mainHeaderLink {
     color: inherit;
     font-weight: normal;
+    border-bottom: 2px dotted;
 }
 
 .mainHeaderLink:hover {
@@ -188,6 +202,16 @@ h6 {
     margin-left: 30%;
     padding: 46px 54px;
     box-sizing: border-box;
+}
+
+.recentWorksCard img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.imageLink {
+    border: 0;
 }
 
 .row {
@@ -283,4 +307,18 @@ h6 {
 
 .tableAlternate tbody, .tableAlternate tbody td, .tableAlternate tbody tr:last-child, .tableAlternate thead tr{
     border: 1px solid rgb(211, 211, 211);;
+}
+
+.imgLeft {
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 4em;
+}
+
+.imgRight {
+    float: right;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 4em;
 }

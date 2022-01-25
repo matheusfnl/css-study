@@ -21,7 +21,7 @@
         
         <header class="mainHeader">
 
-            <a href="index.html" class="mainHeaderLink">
+            <a href="index.html" class="mainHeaderLink imageLink">
                 <img src="images/avatar.jpg" alt="qualquer coisa">
             </a>
             <h1 class="mainHeaderTitle">
@@ -51,58 +51,69 @@
 
                 <h3>Recent Works</h3>
                 <!--Artigo 1-->
-                <article class="recentWorksCard">
-                    <a href="images/thumbs/01.jpg">
-                        <img src="images/thumbs/01.jpg" title="carro estacionado">
-                    </a>
-                    <p class="recentWorksCardTitle">Magna sed consequat tempus</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
 
-                 <!--Artigo 2-->
-                 <article class="recentWorksCard">
-                    <a href="images/thumbs/02.jpg">
-                        <img src="images/thumbs/02.jpg" title="floresta">
-                    </a>
-                    <p class="recentWorksCardTitle">Ultricies lacinia interdum</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
-                
-                 <!--Artigo 3-->
-                 <article class="recentWorksCard">
-                    <a href="images/thumbs/03.jpg">
-                        <img src="images/thumbs/03.jpg" title="livraria">
-                    </a>
-                    <p class="recentWorksCardTitle">Tortor metus commodo</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
+                <div class="row">
+                    <div class="col">
 
-                 <!--Artigo 4-->
-                 <article class="recentWorksCard">
-                    <a href="images/thumbs/04.jpg">
-                        <img src="images/thumbs/04.jpg" title="escada">
-                    </a>
-                    <p class="recentWorksCardTitle">Quam neque phasellus</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
+                        <article class="recentWorksCard">
+                            <a href="images/thumbs/01.jpg">
+                                <img src="images/thumbs/01.jpg" title="carro estacionado" class="imageLink">
+                            </a>
+                            <p class="recentWorksCardTitle">Magna sed consequat tempus</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+        
+                         <!--Artigo 2-->
+                         <article class="recentWorksCard">
+                            <a href="images/thumbs/02.jpg">
+                                <img src="images/thumbs/02.jpg" title="floresta" class="imageLink">
+                            </a>
+                            <p class="recentWorksCardTitle">Ultricies lacinia interdum</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+                        
+                         <!--Artigo 3-->
+                         <article class="recentWorksCard">
+                            <a href="images/thumbs/03.jpg">
+                                <img src="images/thumbs/03.jpg" title="livraria" class="imageLink">
+                            </a>
+                            <p class="recentWorksCardTitle">Tortor metus commodo</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+        
+                    </div>
 
-                 <!--Artigo 5-->
-                 <article class="recentWorksCard">
-                    <a href="images/thumbs/05.jpg">
-                        <img src="images/thumbs/05.jpg" title="montanha de neve">
-                    </a>
-                    <p class="recentWorksCardTitle">Nunc enim commodo aliquet</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
+                    <div class="col">
+     
+                        <!--Artigo 4-->
+                        <article class="recentWorksCard">
+                            <a href="images/thumbs/04.jpg">
+                                <img src="images/thumbs/04.jpg" title="escada" class="imageLink">
+                            </a>
+                            <p class="recentWorksCardTitle">Quam neque phasellus</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
 
-                 <!--Artigo 6-->
-                 <article class="recentWorksCard">
-                    <a href="images/thumbs/06.jpg">
-                        <img src="images/thumbs/06.jpg" title="casinha na floresta">
-                    </a>
-                    <p class="recentWorksCardTitle">Risus ornare lacinia</p>
-                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
+                        <!--Artigo 5-->
+                        <article class="recentWorksCard">
+                            <a href="images/thumbs/05.jpg">
+                                <img src="images/thumbs/05.jpg" title="montanha de neve" class="imageLink">
+                            </a>
+                            <p class="recentWorksCardTitle">Nunc enim commodo aliquet</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+
+                        <!--Artigo 6-->
+                        <article class="recentWorksCard">
+                            <a href="images/thumbs/06.jpg">
+                                <img src="images/thumbs/06.jpg" title="casinha na floresta" class="imageLink">
+                            </a>
+                            <p class="recentWorksCardTitle">Risus ornare lacinia</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+
+                    </div>
+                </div>
 
                 <a href="#" title="Veja Portifolio Completo" class="buttonDefault">Veja Portifolio Completo</a>
 
@@ -133,7 +144,7 @@
                                 <div class="col">
 
                                     <label for="email">E-mail</label>
-                                    <input type="text" name="email" id="email">    
+                                    <input type="email" name="email" id="email">    
 
                                  </div>
 
@@ -403,6 +414,7 @@
                 <h5>Forms</h5>
 
                  <form>
+                            
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name">
 
@@ -417,18 +429,19 @@
                         <option value="4">Human Resources</option>
                     </select>
 
+                    <label for="priority">Priority</label>
                     <label><input type="radio" value="baixa" name="prioridade">Low Priority</label>
                     <label><input type="radio" value="media" name="prioridade">Medium Priority</label>
                     <label><input type="radio" value="media" name="prioridade">High Priority</label>
 
                     <label> <input type="checkbox" name="copy" value="1">Send Me a Copy</label>
-                    <label> <input type="checkbox" name="human" value="1">I'm a Human</label>
+                    <label> <input type="checkbox" name="human" value="1" required>I'm a Human</label>
 
                     <label for="msg">Message</label>
                     <textarea placeholder="Write Your Message" id="msg"></textarea>
 
-                    <input type="submit" class="buttonDefault" value="submit">
-                    <input type="reset" class="buttonDefault" value="clear">
+                    <input type="submit" class="buttonDefault buttonStroke buttonSmall" value="Submit">
+                    <input type="reset" class="buttonDefault buttonStroke buttonSmall" value="Clear">
 
                  </form>
 
