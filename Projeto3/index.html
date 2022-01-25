@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="pt-br">
     <head>
         <title>Projeto 3</title>
 
@@ -9,6 +9,12 @@
         <meta name="description" content="Aprendendo CSS na Prática">
         <meta name="keywords" content="css, html">
         
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/design.css">
 
     </head>
     <body>
@@ -16,13 +22,13 @@
         <header class="mainHeader">
 
             <a href="index.html" class="mainHeaderLink">
-                <img src="#" alt="qualquer coisa">
+                <img src="images/avatar.jpg" alt="qualquer coisa">
             </a>
-            <h1>
+            <h1 class="mainHeaderTitle">
                 Trabalhos e groselhas de <br/>
-                <strong> Daniel Tapias Morales </strong>, <br/>
-                um zé ninguem qualquer <br/>
-                Retirado de <a href="http://html5up.net">html5up.net.</a> 
+                <strong> Fulano Ciclano de Tal</strong>, <br/>
+                um zé ninguem qualquer. <br/>
+                Retirado de <a href="http://html5up.net" class="mainHeaderLink">html5up.net.</a> 
             </h1>
 
         </header>
@@ -110,36 +116,59 @@
                 Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem
                 neque lorem ipsum dolor.</p>
 
-                <form action="#" method="post">
-                    <label for="nome">Name</label>
-                    <input type="text" name="nome" id="nome">
+                <div class="row">
+                    <div class="col-2-3">
 
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email">
+                        <form action="#" method="post">
 
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
+                            <div class="row">
 
-                    <input type="submit" value="Send Message">
+                                <div class="col">
 
-                </form>
+                                    <label for="nome">Name</label>
+                                    <input type="text" name="nome" id="nome">
 
-                <address>
-                    <p>
-                        <span>Address</span>
-                        1234 Somewhere Rd. Nashville, TN 00000 United States
-                    </p>
-                    
-                    <p>
-                        <span>Telephone</span>
-                        000-000-000
-                    </p>
+                                </div>
 
-                    <p>
-                        <span>E-mail</span>
-                        email@server.com
-                    </p>
-                </address>
+                                <div class="col">
+
+                                    <label for="email">E-mail</label>
+                                    <input type="text" name="email" id="email">    
+
+                                 </div>
+
+                            </div>
+
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+        
+                            <input type="submit" value="Send Message" class="buttonDefault buttonStroke buttonSmall">
+        
+                        </form>
+
+                    </div>
+
+                    <div class="col-1-3">
+      
+                        <address>
+                            <p>
+                                <span>Address</span>
+                                1234 Somewhere Rd. Nashville, TN 00000 United States
+                            </p>
+                            
+                            <p>
+                                <span>Telephone</span>
+                                000-000-000
+                            </p>
+
+                            <p>
+                                <span>E-mail</span>
+                                email@server.com
+                            </p>
+                        </address>
+
+                    </div>
+                </div>
 
             </section>
 
@@ -153,16 +182,304 @@
                 This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is underlined 
                 and this is <code>code: for (;;) { ... }</code>. Finally, this is a <a href="#">link</a>.</p>
 
+                <h4>Blockquote &amp; Quote</h4>
+
                 <blockquote cite="http://developer.mozilla.org">
-                    <p>Está é uma citação tirada da
-                        Mozilla Developer Center.</p>
+                    Esta e uma citaçao tirada da
+                    Mozilla Developer Center.
+                </blockquote>
 
                 <p>According to Mozilla's website,
                 <q cite="https://www.mozilla.org/en-US/about/history/details/">
                 Firefox 1.0 was released in 2004 and became a big success.</q></p>
-                </blockquote>
+
+                <h4>Preformatted</h4>
+                <pre><code>
+&lt;script&gt;
+    alert("Hello World!");
+&lt;/script&gt;
+                </code></pre>
+
+                <h4>List</h4>
+
+                <div class="row">
+                    <div class="col">
+                                
+                        <h5>Unordered List</h5>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+
+                        <h5>Ordered List</h5>
+                        <ol>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ol>
+
+                    </div>
+                    <div class="col">
+                                
+                        <h5>Alternate</h5>
+                        <ul class="ulAlternate">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+
+                        <h5>Icons</h5>
+                        <ul class="ulIcons">
+                            <li><i class="fab fa-twitter-square"></i></li>
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-github-square"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li><i class="fab fa-tumblr-square"></i></li>
+                            <li><i class="fab fa-itch-io"></i></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <h5>Actions</h5>
+
+                <div class="row">
+                    <div class="col">
+
+                        <p>
+                            <a href="#" class="buttonDefault">Default</a>
+                            <a href="#" class="buttonDefault buttonStroke">Default</a>
+                        </p>
+
+                        <p>
+                            <a href="#" class="buttonDefault buttonSmall">Small</a>
+                            <a href="#" class="buttonDefault buttonStroke buttonSmall">Small</a>
+                        </p>
+
+                    </div>
+
+                    <div class="col">
+                        <p>
+                            <a href="#" class="buttonDefault buttonFull">Default</a>
+                            <a href="#" class="buttonDefault buttonStroke buttonFull">Default</a>
+                        </p>
+
+                        <p>
+                            <a href="#" class="buttonDefault buttonSmall buttonFull">Default</a>
+                            <a href="#" class="buttonDefault buttonStroke buttonSmall buttonFull">Default</a>
+                        </p>
+                </div>
+
+                <h4>Table</h4>
+
+                <h5>Default</h5>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>100.00</td>
+                        </tr>
+                    </tfoot>
+
+                    <tbody>
+                        <tr>
+                            <th>Item One</th>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+
+                        <tr>
+                            <th>Item Two</th>
+                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                            <td>19.99</td>
+                        </tr>
+
+                        <tr>
+                            <th>Item Three</th>
+                            <td>Morbi faucibus arcu accumsan lorem.</td>
+                            <td>29.99</td>
+                        </tr>
+
+                        <tr>
+                            <th>Item Four</th>
+                            <td>Vitae integer tempus condimentum.</td>
+                            <td>19.99</td>
+                        </tr>
+
+                        <tr>
+                            <th>Item Five</th>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <h5>Alternate</h5>
+
+                <table class="table tableAlternate">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>100.00</td>
+                        </tr>
+                    </tfoot>
+
+                    <tbody>
+                        <tr>
+                            <th>Item One</th>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+
+                        <tr>
+                            <th>Item Two</th>
+                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                            <td>19.99</td>
+                        </tr>
+
+                        <tr>
+                            <th>Item Three</th>
+                            <td>Morbi faucibus arcu accumsan lorem.</td>
+                            <td>29.99</td>
+                        </tr>
+
+                        <tr>
+                            <th>Item Four</th>
+                            <td>Vitae integer tempus condimentum.</td>
+                            <td>19.99</td>
+                        </tr>
+
+                        <tr>
+                            <th>Item Five</th>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+
+                    </tbody>    
+                </table>
+
+                <h5>Buttons</h5>
+                <p>
+                    <button class="buttonDefault">Default</button>
+                    <button class="buttonDefault buttonStroke">Default</button>
+                </p>
+
+                <p>
+                    <button class="buttonDefault buttonSmall">Default</button>
+                    <button class="buttonDefault buttonStroke buttonSmall">Default</button>
+                </p>
+
+                <p>
+                    <button class="buttonDefault buttonFull">Default</button>
+                    <button class="buttonDefault buttonStroke buttonFull">Default</button>
+                </p>
+
+                <p>
+                    <button class="buttonDefault buttonSmall buttonFull">Default</button>
+                    <button class="buttonDefault buttonStroke buttonSmall buttonFull">Default</button>
+                </p>
+
+                <h5>Forms</h5>
+
+                 <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email">
+
+                    <select>
+                        <option value="0">-Category-</option>
+                        <option value="1">Manufacturing</option>
+                        <option value="2">Shipping</option>
+                        <option value="3">Administration</option>
+                        <option value="4">Human Resources</option>
+                    </select>
+
+                    <label><input type="radio" value="baixa" name="prioridade">Low Priority</label>
+                    <label><input type="radio" value="media" name="prioridade">Medium Priority</label>
+                    <label><input type="radio" value="media" name="prioridade">High Priority</label>
+
+                    <label> <input type="checkbox" name="copy" value="1">Send Me a Copy</label>
+                    <label> <input type="checkbox" name="human" value="1">I'm a Human</label>
+
+                    <label for="msg">Message</label>
+                    <textarea placeholder="Write Your Message" id="msg"></textarea>
+
+                    <input type="submit" class="buttonDefault" value="submit">
+                    <input type="reset" class="buttonDefault" value="clear">
+
+                 </form>
 
             </section>
+
+            <section class="mainContentSection">
+
+                <h3>Images</h3>
+                
+                <div class="galleryImg">
+                    <img src="images/fulls/01.jpg" alt="carro estacionado">
+                </div>
+                <div class="galleryThumb">
+                    <img src="images/fulls/01.jpg" alt="carro estacionado">
+                    <img src="images/fulls/02.jpg" alt="floresta">
+                    <img src="images/fulls/03.jpg" alt="biblioteca">
+                    <img src="images/fulls/04.jpg" alt="escada">
+                    <img src="images/fulls/05.jpg" alt="montanha de neve">
+                    <img src="images/fulls/06.jpg" alt="casa na floresta">
+                    <img src="images/fulls/02.jpg" alt="floresta">
+                    <img src="images/fulls/01.jpg" alt="carro estacionado">
+                    <img src="images/fulls/04.jpg" alt="escada">
+
+                </div>
+
+                <h4>Left &amp; Right</h4>
+
+                <p> <img src="images/avatar.jpg" class="imgLeft">Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. 
+                Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat
+                ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget.
+                tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+                iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec
+                accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante
+                ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing
+                accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus 
+                euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis 
+                iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+
+                <p> <img src="images/avatar.jpg" class="imgRight">  Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. 
+                Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat
+                ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget.
+                tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+                iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec
+                accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante
+                ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing
+                accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus 
+                euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis 
+                iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+
+            </section>
+
 
         </main>
         <footer class="mainFooter"></footer>
